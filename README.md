@@ -19,8 +19,13 @@ LIMITATION OF LIABILITY: THE USER ASSUMES ALL RISKS AND RESPONSIBILITIES WHEN US
 
 Please view the full Terms of Use at https://www.getcode.com/terms.
 
-## Vulnerability Disclosure
+## Security and Issue Disclosures
 
-In the interest of protecting the security of our users and their funds, we ask that if you discover any security vulnerabilities in the Timelock Explorer, the on-chain smart contract, or the mobile app, you report them directly to security@getcode.com instead of disclosing them publicly on Github or Twitter. Our security team will review your report. Your cooperation in maintaining the security of our products is appreciated.
+In the interest of protecting the security of our users and their funds, we ask
+that if you discover any security vulnerabilities in the Timelock Explorer, the
+on-chain smart contract, or the mobile app, please report them use this [Report
+a Vulnerability](https://github.com/code-wallet/timelock-explorer/security/advisories/new)
+link. Our security team will review your report. Your cooperation in maintaining
+the security of our products is appreciated.
 
-Please view the full Security Policy at https://www.getcode.com/security.
+Please view the full Security Policy at https://github.com/code-wallet/timelock-explorer/blob/main/SECURITY.md.
