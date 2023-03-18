@@ -17,8 +17,7 @@
     "build": "npm run build:lib && npm run build:app",
     "build:lib": "vite build && vue-tsc --emitDeclarationOnly",
     "build:app": "vite build -c vite.timelock-explorer.config.ts",
-    "preview": "vite preview -c vite.timelock-explorer.config.ts",
-    "mainnet-proxy": "node ./proxy/server.js"
+    "preview": "vite preview -c vite.timelock-explorer.config.ts"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.7",
