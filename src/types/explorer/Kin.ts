@@ -45,14 +45,6 @@ export function FromQuarks(quarks: number) : number {
 		throw new Error("Quark amount is not a whole number");
 	}
 
-	if (quarks > Number.MAX_SAFE_INTEGER / quarksPerKin) {
-		throw new Error("Quark amount is too large");
-	}
-
-	if (quarks < Number.MIN_SAFE_INTEGER / quarksPerKin) {
-		throw new Error("Quark amount is too small");
-	}
-
 	return quarks / quarksPerKin;
 }
 
