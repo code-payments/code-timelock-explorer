@@ -52,11 +52,8 @@ export async function signUnlockTx(accounts: Timelock[]) : Promise<Transaction> 
   const { connection } = getProvider();
   const { feePayer, signTransaction } = getWallet();
 
-  const unique = accounts.filter((a, i) => accounts.findIndex(
-    (b) => a.getAddress() === b.getAddress()) === i);
-
   const ix : TransactionInstruction[] = [];
-  for (const account of unique) {
+  for (const account of getUniqueTimelocks(accounts)) {
     ix.push(
       program.createRevokeLockWithTimeoutInstruction(
         {
@@ -101,11 +98,8 @@ export async function signWithdrawTx(tray: Tray, accounts: Timelock[]) : Promise
   const { connection } = getProvider();
   const { feePayer, signTransaction } = getWallet();
 
-  const unique = accounts.filter((a, i) => accounts.findIndex(
-    (b) => a.getAddress() === b.getAddress()) === i);
-
   const ix : TransactionInstruction[] = [];
-  for (const account of unique) {
+  for (const account of getUniqueTimelocks(accounts)) {
     ix.push(
       program.createDeactivateInstruction(
         {
@@ -141,4 +135,14 @@ export async function signWithdrawTx(tray: Tray, accounts: Timelock[]) : Promise
   tx.partialSign(...accounts.map((a) => a.authority))
 
   return await signTransaction(tx);
+}
+
+/**
+ * Get a list of unique timelock accounts from a list of timelock accounts.
+ * @param accounts A list of timelock accounts
+ * @returns A list of unique timelock accounts
+ */
+function getUniqueTimelocks(accounts: Timelock[]) : Timelock[] {
+  return accounts.filter((a, i) => accounts.findIndex(
+    (b) => a.getAddress().toBase58() === b.getAddress().toBase58()) === i);
 }
