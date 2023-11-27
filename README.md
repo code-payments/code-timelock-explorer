@@ -1,5 +1,4 @@
-![Code Timelock Explorer](https://github.com/code-payments/code-timelock-explorer/assets/623790/0413531b-71ee-4be7-87d9-7c2513374d7b)
-
+<img width="1280" alt="Code Timelock Explorer" src="https://github.com/code-payments/code-timelock-explorer/assets/623790/f088dc08-35b9-4852-aa49-325e84b285cf">
 
 # Code Timelock Explorer
 
