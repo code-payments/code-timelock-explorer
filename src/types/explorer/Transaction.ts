@@ -52,8 +52,11 @@ export async function signUnlockTx(accounts: Timelock[]) : Promise<Transaction> 
   const { connection } = getProvider();
   const { feePayer, signTransaction } = getWallet();
 
+  const unique = accounts.filter((a, i) => accounts.findIndex(
+    (b) => a.getAddress() === b.getAddress()) === i);
+
   const ix : TransactionInstruction[] = [];
-  for (const account of accounts) {
+  for (const account of unique) {
     ix.push(
       program.createRevokeLockWithTimeoutInstruction(
         {
@@ -98,8 +101,11 @@ export async function signWithdrawTx(tray: Tray, accounts: Timelock[]) : Promise
   const { connection } = getProvider();
   const { feePayer, signTransaction } = getWallet();
 
+  const unique = accounts.filter((a, i) => accounts.findIndex(
+    (b) => a.getAddress() === b.getAddress()) === i);
+
   const ix : TransactionInstruction[] = [];
-  for (const account of accounts) {
+  for (const account of unique) {
     ix.push(
       program.createDeactivateInstruction(
         {

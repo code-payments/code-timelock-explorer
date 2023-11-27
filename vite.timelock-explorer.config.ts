@@ -4,7 +4,7 @@ const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/timelock-explorer/',
+  base: '/code-timelock-explorer/',
   plugins: [vue()],
   root: path.resolve(__dirname, 'timelock-explorer'),
   resolve: {

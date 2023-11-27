@@ -31,4 +31,4 @@ a Vulnerability](https://github.com/code-payments/code-timelock-explorer/securit
 link. Our security team will review your report. Your cooperation in maintaining
 the security of our products is appreciated.
 
-Please view the full Security Policy at https://github.com/code-wallet/timelock-explorer/blob/main/SECURITY.md.
+Please view the full Security Policy at https://github.com/code-payments/code-timelock-explorer/blob/main/SECURITY.md.

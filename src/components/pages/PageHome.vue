@@ -27,7 +27,7 @@ function openRiskConsent() {
           </p>
 
           <div class="mt-8 flex gap-4 justify-center ">
-            <Button href="https://github.com/code-wallet/timelock-explorer" variant="secondary">View on GitHub</Button>
+            <Button href="https://github.com/code-payments/code-timelock-explorer" variant="secondary">View on GitHub</Button>
             <Button @click="openRiskConsent()">Get started</Button>
           </div>
 

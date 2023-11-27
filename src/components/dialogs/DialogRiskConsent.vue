@@ -56,6 +56,10 @@ export default defineComponent({
                       they will have full access to your funds. You can verify
                       this website by looking at the Open Source code for
                       yourself, or asking someone you trust to do so for you.
+                      <br />
+                      Using a mobile device is not recommended as you may have
+                      trouble signing transactions or seeing full account
+                      details. We recommend using Chrome on desktop.
                     </p>
                 </div>
 

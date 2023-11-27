@@ -123,7 +123,7 @@ export default defineComponent({
             <div class="relative flex basis-0 justify-end gap-6 gap-8 flex-grow">
                 <Button @click="openClusterSettings" variant="primary">Settings</Button>
 
-                <a class="group" aria-label="GitHub" href="https://github.com/code-wallet/timelock-explorer">
+                <a class="group" aria-label="GitHub" href="https://github.com/code-payments/code-timelock-explorer">
                     <svg aria-hidden="true" viewBox="0 0 16 16"
                         class="h-9 w-9 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300">
                         <path
