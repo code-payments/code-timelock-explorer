@@ -1,7 +1,7 @@
-![timelock-explorer](https://github.com/code-wallet/timelock-explorer/assets/623790/86c979d0-8108-4e46-8849-d5ab54391c7f)
+![Code Timelock Explorer](https://github.com/code-payments/code-timelock-explorer/assets/623790/0413531b-71ee-4be7-87d9-7c2513374d7b)
 
 
-# Timelock Explorer
+# Code Timelock Explorer
 
 This repository contains the source code for the Timelock Explorer, an open-source reference implementation for unlocking Timelock Accounts created by the Code Wallet App. These accounts are based on a smart contract and can be accessed using your Access Key, enabling you to transfer your funds to other Solana wallets. The Timelock Explorer should only be used as a last resort option if you are unable to utilise the Code Wallet App.
 
