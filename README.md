@@ -5,7 +5,7 @@
 
 This repository contains the source code for the Timelock Explorer, an open-source reference implementation for unlocking Timelock Accounts created by the Code Wallet App. These accounts are based on a smart contract and can be accessed using your Access Key, enabling you to transfer your funds to other Solana wallets. The Timelock Explorer should only be used as a last resort option if you are unable to utilise the Code Wallet App.
 
-Live Demo: https://code-wallet.github.io/timelock-explorer/
+Live Demo: https://code-payments.github.io/code-timelock-explorer/
 
 In order to use the Timelock Explorer, you will need to connect a fee paying wallet to fund the SOL transaction fees for the unlock transactions. The codebase uses the standard Solana wallet adapter for the fee paying wallet, so you can use any wallet that is supported by the Solana wallet adapter. For more information on Solana transaction fees, you can visit the official Solana documentation at https://docs.solana.com/transaction_fees.
 
@@ -27,7 +27,7 @@ Please view the full Terms of Use at https://www.getcode.com/terms.
 In the interest of protecting the security of our users and their funds, we ask
 that if you discover any security vulnerabilities in the Timelock Explorer, the
 on-chain smart contract, or the mobile app, please report them use this [Report
-a Vulnerability](https://github.com/code-wallet/timelock-explorer/security/advisories/new)
+a Vulnerability](https://github.com/code-payments/code-timelock-explorer/security/advisories/new)
 link. Our security team will review your report. Your cooperation in maintaining
 the security of our products is appreciated.
 
