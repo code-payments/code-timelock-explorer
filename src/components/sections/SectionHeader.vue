@@ -71,7 +71,7 @@ export default defineComponent({
     <header :class="classNames">
         <div class="mx-auto max-w-7xl flex flex-wrap items-center justify-between">
             <div class="relative hidden md:flex flex-grow basis-0 items-center">
-                <a href="/timelock-explorer/" class="text-white pl-2">
+                <a href="/code-timelock-explorer/" class="text-white pl-2">
 
                     <svg width="277" height="191" viewBox="0 0 277 191" class="h-11 w-11 inline-block align-top">
                         <g fill="#38BDF8">
