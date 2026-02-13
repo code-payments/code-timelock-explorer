@@ -25,7 +25,7 @@ export async function signCreateAtaTx(tray: Tray): Promise<Transaction> {
     ),
   ];
 
-  const bh = await connection().getRecentBlockhash();
+  const bh = await connection().getLatestBlockhash();
   const tx = new Transaction();
   tx.add(...ix);
   tx.feePayer = feePayer;
@@ -69,7 +69,7 @@ export async function signUnlockTx(accounts: Timelock[]) : Promise<Transaction> 
     )
   }
 
-  const bh = await connection().getRecentBlockhash();
+  const bh = await connection().getLatestBlockhash();
   const tx = new Transaction();
   tx.add(...ix);
   tx.feePayer = feePayer;
@@ -127,7 +127,7 @@ export async function signWithdrawTx(tray: Tray, accounts: Timelock[]) : Promise
     )
   }
 
-  const bh = await connection().getRecentBlockhash();
+  const bh = await connection().getLatestBlockhash();
   const tx = new Transaction();
   tx.add(...ix);
   tx.feePayer = feePayer;
