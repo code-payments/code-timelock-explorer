@@ -29,7 +29,7 @@ const walletOptions = {
 };
 
 const opt = {
-  rpcUrl: "https://explorer-rpc.getcode.com",
+  rpcUrl: "https://solana-rpc.flipcash.com",
 }
 
 const app = createApp(App);
